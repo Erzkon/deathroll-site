@@ -21,8 +21,8 @@ und müssen überall ersetzt werden (eine Postanschrift wird bewusst nicht angeg
 
 | Platzhalter | Ersetzen durch |
 |-------------|----------------|
-| `[NAME]` | Vor- und Nachname (Verantwortlicher in der Datenschutzerklärung) |
-| `[E-MAIL]` | Kontakt-E-Mail-Adresse (auch in den `mailto:`-Links und im Footer) |
+| `Kevin Bolte` | Vor- und Nachname (Verantwortlicher in der Datenschutzerklärung) |
+| `erzkon.dev@gmail.com` | Kontakt-E-Mail-Adresse (auch in den `mailto:`-Links und im Footer) |
 
 Prüfen, ob noch Platzhalter übrig sind:
 
