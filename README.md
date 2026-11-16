@@ -1,13 +1,12 @@
 # deathroll-site
 
-Statische Webseite für **Deathroll – Party Dice**: Support, FAQ, Datenschutzerklärung und Impressum.
+Statische Webseite für **Deathroll – Party Dice**: Support, FAQ und Datenschutzerklärung.
 Reines HTML/CSS, keine externen Ressourcen, keine Cookies, kein JavaScript, keine Analyse.
 
 | Datei | Inhalt |
 |-------|--------|
 | `index.html` / `en.html` | Startseite mit Spielerklärung, Support und FAQ (DE / EN) |
 | `privacy.html` / `privacy-en.html` | Datenschutzerklärung (DE / EN) |
-| `impressum.html` | Impressum (DE, auf allen Seiten im Footer verlinkt) |
 | `style.css` | Gemeinsames Stylesheet im Look der App |
 | `icon.png` | App-Icon, 256 × 256 px |
 | `.nojekyll` | GitHub Pages liefert die Dateien unverändert aus (kein Jekyll) |
@@ -17,25 +16,23 @@ Die App verlinkt auf `https://erzkon.github.io/deathroll-site/` (Support) und
 
 ## Vor der Veröffentlichung: Platzhalter ausfüllen
 
-Diese Platzhalter kommen in `index.html`, `en.html`, `privacy.html`, `privacy-en.html` und `impressum.html` vor
-und müssen überall ersetzt werden:
+Diese Platzhalter kommen in `index.html`, `en.html`, `privacy.html` und `privacy-en.html` vor
+und müssen überall ersetzt werden (eine Postanschrift wird bewusst nicht angegeben):
 
 | Platzhalter | Ersetzen durch |
 |-------------|----------------|
-| `[NAME]` | Vor- und Nachname (bzw. Name des Anbieters) |
-| `[STRASSE HAUSNUMMER]` | Straße und Hausnummer (ladungsfähige Anschrift, kein Postfach) |
-| `[PLZ ORT]` | Postleitzahl und Ort |
-| `[E-MAIL]` | Kontakt-E-Mail-Adresse (auch in den `mailto:`-Links) |
+| `[NAME]` | Vor- und Nachname (Verantwortlicher in der Datenschutzerklärung) |
+| `[E-MAIL]` | Kontakt-E-Mail-Adresse (auch in den `mailto:`-Links und im Footer) |
 
 Prüfen, ob noch Platzhalter übrig sind:
 
 ```bash
-grep -n "\[NAME\]\|\[STRASSE HAUSNUMMER\]\|\[PLZ ORT\]\|\[E-MAIL\]" *.html
+grep -n "\[NAME\]\|\[E-MAIL\]" *.html
 ```
 
 Außerdem das Stand-Datum in `privacy.html` und `privacy-en.html` aktualisieren, wenn sich Inhalte ändern.
 
-> Hinweis: Datenschutzerklärung und Impressum sind sorgfältig formulierte Vorlagen, aber keine Rechtsberatung.
+> Hinweis: Die Datenschutzerklärung ist eine sorgfältig formulierte Vorlage, aber keine Rechtsberatung.
 > Vor der Veröffentlichung bitte prüfen (lassen), ob sie zur eigenen Situation passen.
 
 ## GitHub Pages aktivieren
