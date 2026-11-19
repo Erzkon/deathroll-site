@@ -45,6 +45,26 @@ Außerdem das Stand-Datum in `privacy.html` und `privacy-en.html` aktualisieren,
 5. In App Store Connect eintragen: Support-URL `https://erzkon.github.io/deathroll-site/`,
    Datenschutz-URL `https://erzkon.github.io/deathroll-site/privacy.html`.
 
+## Release-Branches
+
+Änderungen für kommende App-Versionen liegen auf eigenen Branches und gehen erst live, wenn die jeweilige
+Version im App Store verfügbar ist:
+
+| Branch | Inhalt | Wann mergen und pushen |
+|--------|--------|------------------------|
+| `release-1.0` | Button „Im App Store laden“ / „Download on the App Store“ auf der Startseite (DE/EN) | sobald **1.0** im App Store live ist |
+| `release-1.2` | baut auf `release-1.0` auf: Feature-Liste (Klassisch, Elimination, Statistik, Erfolge, „Wer fängt an?“), Datenschutzerklärung „Lokale Speicherung“ für 1.2, Stand-Datum | sobald **1.2** im App Store live ist |
+
+```bash
+# 1.0 ist live
+git switch main && git merge --ff-only release-1.0 && git push
+
+# 1.2 ist live (danach)
+git switch main && git merge --ff-only release-1.2 && git push
+```
+
+Vor dem Merge von `release-1.2` das Stand-Datum in `privacy.html` / `privacy-en.html` auf den Veröffentlichungstag setzen.
+
 ## Lokal ansehen
 
 ```bash
