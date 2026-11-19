@@ -50,6 +50,25 @@ header.top {
 .hero h1 .sub { color: var(--gold); }
 .hero p { color: var(--muted); margin: 0 auto; max-width: 560px; }
 
+/* App-Store-Button im Look der App (kein offizielles Badge, keine externen Ressourcen). */
+.store-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #1a1206;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(240, 180, 41, 0.25);
+}
+.store-button:hover, .store-button:focus { background: #ffc94a; color: #1a1206; }
+.store-button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.store-icon { width: 22px; height: 22px; flex: none; }
+
 h1 { font-size: 30px; line-height: 1.25; }
 h2 { font-size: 22px; margin-top: 36px; color: var(--gold); }
 h3 { font-size: 18px; margin-bottom: 4px; }
