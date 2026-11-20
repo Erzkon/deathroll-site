@@ -54,6 +54,7 @@ Version im App Store verfügbar ist:
 |--------|--------|------------------------|
 | `release-1.0` | Button „Im App Store laden“ / „Download on the App Store“ auf der Startseite (DE/EN) | sobald **1.0** im App Store live ist |
 | `release-1.2` | baut auf `release-1.0` auf: Feature-Liste (Klassisch, Elimination, Statistik, Erfolge, „Wer fängt an?“), Datenschutzerklärung „Lokale Speicherung“ für 1.2, Stand-Datum | sobald **1.2** im App Store live ist |
+| `release-2.0` | baut auf `release-1.2` auf: Feature „Jeder am eigenen iPhone“ (Nearby, Online, Browser), 25 Erfolge, FAQ „Android“ und „Internet“, Datenschutzerklärung Abschnitt 5 „Gemeinsam spielen“, Stand-Datum | sobald **2.0** im App Store live ist |
 
 ```bash
 # 1.0 ist live
@@ -61,9 +62,12 @@ git switch main && git merge --ff-only release-1.0 && git push
 
 # 1.2 ist live (danach)
 git switch main && git merge --ff-only release-1.2 && git push
+
+# 2.0 ist live (danach)
+git switch main && git merge --ff-only release-2.0 && git push
 ```
 
-Vor dem Merge von `release-1.2` das Stand-Datum in `privacy.html` / `privacy-en.html` auf den Veröffentlichungstag setzen.
+Vor dem Merge von `release-1.2` bzw. `release-2.0` das Stand-Datum in `privacy.html` / `privacy-en.html` auf den Veröffentlichungstag setzen.
 
 ## Lokal ansehen
 
