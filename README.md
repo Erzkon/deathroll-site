@@ -6,6 +6,7 @@ Reines HTML/CSS, keine externen Ressourcen, keine Cookies, kein JavaScript, kein
 | Datei | Inhalt |
 |-------|--------|
 | `index.html` / `en.html` | Startseite mit Spielerklärung, Support und FAQ (DE / EN) |
+| `es.html` / `fr.html` / `it.html` / `pt-br.html` | Startseite auf Spanisch, Französisch, Italienisch, Portugiesisch (BR), ab 2.0; verlinken auf die englische Datenschutzerklärung |
 | `privacy.html` / `privacy-en.html` | Datenschutzerklärung (DE / EN) |
 | `style.css` | Gemeinsames Stylesheet im Look der App |
 | `icon.png` | App-Icon, 256 × 256 px |
@@ -17,7 +18,7 @@ Die App verlinkt auf `https://erzkon.github.io/deathroll-site/` (Support) und
 ## Vor der Veröffentlichung: Platzhalter ausfüllen
 
 Diese Platzhalter kommen in `index.html`, `en.html`, `privacy.html` und `privacy-en.html` vor
-und müssen überall ersetzt werden (eine Postanschrift wird bewusst nicht angegeben):
+(und in `es.html`, `fr.html`, `it.html`, `pt-br.html`) und müssen überall ersetzt werden (eine Postanschrift wird bewusst nicht angegeben):
 
 | Platzhalter | Ersetzen durch |
 |-------------|----------------|
@@ -54,7 +55,7 @@ Version im App Store verfügbar ist:
 |--------|--------|------------------------|
 | `release-1.0` | Button „Im App Store laden“ / „Download on the App Store“ auf der Startseite (DE/EN) | sobald **1.0** im App Store live ist |
 | `release-1.2` | baut auf `release-1.0` auf: Feature-Liste (Klassisch, Elimination, Statistik, Erfolge, „Wer fängt an?“), Datenschutzerklärung „Lokale Speicherung“ für 1.2, Stand-Datum | sobald **1.2** im App Store live ist |
-| `release-2.0` | baut auf `release-1.2` auf: Feature „Jeder am eigenen iPhone“ (Nearby, Online, Browser), 25 Erfolge, FAQ „Android“ und „Internet“, Datenschutzerklärung Abschnitt 5 „Gemeinsam spielen“, Stand-Datum | sobald **2.0** im App Store live ist |
+| `release-2.0` | baut auf `release-1.2` auf: Feature „Jeder am eigenen iPhone“ (Nearby, Online, Browser), 25 Erfolge, FAQ „Android“ und „Internet“, Datenschutzerklärung Abschnitt 5 „Gemeinsam spielen“, Stand-Datum, Startseite zusätzlich auf ES/FR/IT/PT mit Sprachumschalter | sobald **2.0** im App Store live ist |
 
 ```bash
 # 1.0 ist live

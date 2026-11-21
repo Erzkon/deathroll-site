@@ -32,6 +32,7 @@ header.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -43,6 +44,11 @@ header.top {
 .lang { font-size: 15px; color: var(--muted); }
 .lang a, .lang strong { padding: 2px 6px; }
 .lang strong { color: var(--text); }
+/* Sechs Sprachen: auf schmalen Handys enger, notfalls unter das Logo umbrechen. */
+@media (max-width: 420px) {
+  .lang { font-size: 14px; }
+  .lang a, .lang strong { padding: 2px 3px; }
+}
 
 .hero { text-align: center; padding: 24px 0 8px; }
 .hero img { width: 128px; height: 128px; border-radius: 29px; box-shadow: 0 12px 40px rgba(255, 59, 74, 0.25); }
